@@ -9,11 +9,11 @@ module eFPGA_filter_enable(
  begin
  if(!reset)
  begin
- en <= 1'b0;
+ 	en <= 1'b0;
  end
  if (status_reg==64'hfff5206048)
  begin
-en <= 1'b1;
+	en <= 1'b1;
  end
  end    
 endmodule
