@@ -1,12 +1,10 @@
 module eFPGA_dma_fsm(input wire clk, input wire [31:0] io_in, output wire [31:0] io_out, io_oeb);
-
 eFPGA_dma_filter i_eFPGA_dma_filter(
 	.clk(clk),	
 	.io_in(io_in),
 	.io_out(io_out),
 	.io_oeb(io_oeb)	
 	);
-
 endmodule
 
 module eFPGA_dma_filter (
